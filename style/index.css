@@ -35,6 +35,7 @@ footer, header, hgroup, menu, nav, section {
 /*General Styles*/
 html{
     font-size: 62.5%;
+		font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -56,6 +57,7 @@ button{
 /* Navigation bar styles */
 h2{
 	font-size: 1.8rem;
+	color: black;
 }
 
 nav{
@@ -118,6 +120,8 @@ nav{
 
 .main-img div h1{
 	font-size: 6rem;
+	color: #3f3f3f;
+	font-family: 'Oxygen', sans-serif;
 }
 
 .bg-img div button{
@@ -141,7 +145,6 @@ nav{
 	margin: auto;
 	display: flex;
 	justify-content: center;
-	border: 1px solid grey;
 }
 
 .gallery div{
@@ -155,4 +158,34 @@ nav{
 	margin-top: 2%;
 	width: 20%;
 	text-align: center;
+}
+
+/* Footer Styles */
+footer{
+	background-color: lightgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2%;
+}
+
+footer div{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}
+
+footer div button{
+	padding: 1% 2%;
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	transition-duration: 1s;
+}
+
+footer div button:hover{
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+	transition-duration: 1s;
 }
