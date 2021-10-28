@@ -170,9 +170,9 @@ footer{
 }
 
 footer div{
-	width: 80%;
+	width: 60%;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 }
 
 footer div button{
@@ -188,4 +188,9 @@ footer div button:hover{
 	background-color: black;
 	border: 1px solid white;
 	transition-duration: 1s;
+}
+
+footer div.links{
+	display: flex;
+	justify-content: flex-end;
 }
