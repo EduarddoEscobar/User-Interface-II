@@ -55,7 +55,7 @@ button{
 }
 
 /* Navigation bar styles */
-h2{
+nav h2{
 	font-size: 1.8rem;
 	color: black;
 }
@@ -172,7 +172,7 @@ footer{
 footer div{
 	width: 60%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 }
 
 footer div button{
@@ -190,14 +190,35 @@ footer div button:hover{
 	transition-duration: 1s;
 }
 
-footer div.links{
-	display: flex;
-	justify-content: flex-end;
-}
-
 /* Media Queries */
 @media (max-width: 800px){
+	nav{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
 	
+	.links{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2% 0;
+	}
+
+	.links a{
+		width: 40%;
+	}
+
+	nav h2{
+		font-size: 3rem;
+		padding-top: 4%;
+	}
+
+	.intro{
+		height: 30vh;
+	}
 }
 
 @media (max-width: 500px){
@@ -224,14 +245,17 @@ footer div.links{
 		font-size: 3rem;
 		padding-top: 4%;
 	}
+
 	.intro{
-		border: 1px solid red;
 		height: 30vh;
 	}
 
-	.main-img{
-		height: 100%;
+
+	.gallery{
+		flex-wrap: wrap;
 	}
 
-	
+	.gallery div div.project{
+		width: 40%;
+	}
 }
