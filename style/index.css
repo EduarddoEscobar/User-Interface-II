@@ -118,7 +118,7 @@ nav{
 	text-align: center;
 }
 
-.main-img div h1{
+.bg-img.main-img div h1{
 	font-size: 6rem;
 	color: #3f3f3f;
 	font-family: 'Oxygen', sans-serif;
@@ -226,10 +226,12 @@ footer div.links{
 	}
 	.intro{
 		border: 1px solid red;
-		height: auto;
+		height: 30vh;
 	}
 
 	.main-img{
-		height: 50%;
+		height: 100%;
 	}
+
+	
 }
