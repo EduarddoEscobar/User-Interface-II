@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 /*General Styles*/
 html{
     font-size: 62.5%;
-		font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -197,9 +197,39 @@ footer div.links{
 
 /* Media Queries */
 @media (max-width: 800px){
-
+	
 }
 
 @media (max-width: 500px){
+	nav{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
 	
+	.links{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2% 0;
+	}
+
+	.links a{
+		width: 40%;
+	}
+
+	nav h2{
+		font-size: 3rem;
+		padding-top: 4%;
+	}
+	.intro{
+		border: 1px solid red;
+		height: auto;
+	}
+
+	.main-img{
+		height: 50%;
+	}
 }
