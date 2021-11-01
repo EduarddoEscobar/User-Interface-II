@@ -162,7 +162,6 @@ nav{
 	margin-top: 2%;
 	width: 15%;
 	text-align: center;
-	border: 1px solid red;
 }
 
 /* Footer Styles */
@@ -197,35 +196,7 @@ footer div button:hover{
 
 /* Media Queries */
 
-@media (max-width: 800px){
-	nav{
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-	}
-	
-	.links{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 2% 0;
-	}
 
-	.links a{
-		width: 40%;
-	}
-
-	nav h2{
-		font-size: 3rem;
-		padding-top: 4%;
-	}
-
-	.intro{
-		height: 30vh;
-	}
-}
 
 @media (max-width: 1920px){
 
@@ -247,6 +218,27 @@ footer div button:hover{
 
 	}
 }
+
+@media (max-width: 1366px){
+
+	nav a, nav h2{
+		font-size: 2rem;
+	}
+	div.main-img.bg-img div h1{
+		font-size: 10rem;
+		padding-top: 4%;
+	}
+
+	div.main-img.bg-img div button{
+		font-size: 3rem;
+		padding: 2%;
+	}
+
+	footer button{
+		font-size: 3rem;
+	}
+}
+
 @media (max-width: 800px){
 	nav{
 		position: relative;
@@ -281,6 +273,7 @@ footer div button:hover{
 		height: 30vh;
 	}
 }
+
 
 @media (max-width: 500px){
 	nav{
